@@ -1,0 +1,20 @@
+<div class="form-group"> 
+    <label for="title">
+        Title
+    </label>
+    <input id="title" class="form-control" type="text" autocomplete="off" name="title" value="<%= article.title %>">
+</div>
+<div class="form-group"> 
+    <label for="description"> 
+        Description
+    </label>
+    <textarea id="description" class="form-control" autocomplete="off" name="description" > <%= article.description %> </textarea>
+</div>
+<div class="form-group"> 
+    <label for="markdown"> 
+        Markdown
+    </label>
+    <textarea id="markdown" class="form-control" autocomplete="off" name="markdown"> <%= article.markdown %> </textarea>
+</div>
+<a href="/" class="mb-4 mt-4 btn btn-warning"> Cancel </a> 
+<button type="submit" class="mt-4 mb-4 btn btn-primary"> Save </button>
